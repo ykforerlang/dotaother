@@ -28,13 +28,16 @@ blog
            Pro = high prize pool tourney but no extra money to prize pool
            Am = amateur = low prize pool tourney w/ no extra money to prize pool
     steam 接口
-    获取联赛列表：　http://api.steampowered.com/IDOTA2Match_570/GetLeagueListing/v1/?key=577A366039269967223A15C59EDE6D3B&language=zh_cn
-    根据dotaId获取比赛（筛选比较复杂） ：https://api.steampowered.com/IDOTA2Match_570/GetMatchHistory/v001/?key=577A366039269967223A15C59EDE6D3B&league_id=2339
-    根据mathId 获取比赛详细信息： http://api.steampowered.com/IDOTA2Match_570/GetMatchDetails/v1/?key=577A366039269967223A15C59EDE6D3B&match_id=1022565334
-    http://api.steampowered.com/IDOTA2Teams_570/GetTeamInfo/v1?key=577A366039269967223A15C59EDE6D3B&league_id=4325
+    获取联赛列表：　http://api.steampowered.com/IDOTA2Match_570/GetLeagueListing/v1/?key={}&language=zh_cn
+    根据dotaId获取比赛（筛选比较复杂） ：https://api.steampowered.com/IDOTA2Match_570/GetMatchHistory/v001/?key={}&league_id=2339
+    根据mathId 获取比赛详细信息： http://api.steampowered.com/IDOTA2Match_570/GetMatchDetails/v1/?key={}&match_id=1022565334
+    http://api.steampowered.com/IDOTA2Teams_570/GetTeamInfo/v1?key={}&league_id=4325
     steam 接口说明：
          http://steamwebapi.azurewebsites.net/
     100场： 1450688718 - 1450687298 = 1500s = 150 /6 = 25min
+
+
+    https://api.steampowered.com/IEconDOTA2_570/GetHeroes/v1/?key={}&language=zh_cn
 
 
 
