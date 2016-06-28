@@ -7,7 +7,9 @@ var JS_PATH = path.resolve(ROOT_PATH, "public", "javascripts")
 module.exports = {
     entry: {
         dotaother: path.resolve(JSX_PATH, 'dotaother.js'),
-        league: path.resolve(JSX_PATH, 'league.js')
+        league: path.resolve(JSX_PATH, 'league.js'),
+        svg: path.resolve(JSX_PATH, "test", "svg.js"),
+        art: path.resolve(JSX_PATH, "test", "art.js"),
     },
 
     output: {

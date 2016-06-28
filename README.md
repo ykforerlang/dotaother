@@ -19,11 +19,22 @@ blog
      we can then assign the event to a DOM element and set the event handler to the the value of the prop we just passed in.
      I realize that probably makes no sense, so let's walk through an example.
 
+     http://browniefed.com/blog/getting-react-art-running-on-react-native/
+     http://browniefed.com/blog/2015/10/14/react-native-morphing-svg-paths-with-react-art/
+     https://github.com/skv-headless/react-native-scrollable-tab-view
+     https://github.com/reactjs
+     http://browniefed.com/react-native-animation-book/
+     https://leanpub.com/programming-react-native
+     http://wiki.jikexueyuan.com/project/react-native/scroll-view.html
+
+
 2.mongodb: https://mongodb.github.io/node-mongodb-native/api-generated/collection.html#find
 
 3.express : http://expressjs.com/zh-cn/guide/using-middleware.html
 
-4.dota2 api
+4. es6 https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/Arrow_functions
+
+5.dota2 api
    league: IIRC Premium = money from ticket goes to prize pool
            Pro = high prize pool tourney but no extra money to prize pool
            Am = amateur = low prize pool tourney w/ no extra money to prize pool
@@ -37,7 +48,32 @@ blog
     100场： 1450688718 - 1450687298 = 1500s = 150 /6 = 25min
 
 
+    //装备图标
+    https://api.steampowered.com/IEconDOTA2_570/GetGameItems/v1?key={}&language=zh_cn
+    http://cdn.dota2.com/apps/dota2/images/items/mithril_hammer_lg.png
+    http://cdn.dota2.com/apps/dota2/images/items/mithril_hammer_eg.png
+
+
+    //英雄图标
     https://api.steampowered.com/IEconDOTA2_570/GetHeroes/v1/?key={}&language=zh_cn
+    http://cdn.dota2.com/apps/dota2/images/heroes/sand_king_full.png
+    http://cdn.dota2.com/apps/dota2/images/heroes/antimage_hphover.png
+    http://cdn.dota2.com/apps/dota2/images/heroes/nyx_assassin_lg.png
+    http://cdn.dota2.com/apps/dota2/images/heroes/nyx_assassin_sb.png
+    http://cdn.dota2.com/apps/dota2/images/heroes/nyx_assassin_eg.png
+
+    //技能图标
+    http://cdn.dota2.com/apps/dota2/images/abilities/sven_storm_bolt_hp1.png
+    http://cdn.dota2.com/apps/dota2/images/abilities/sven_storm_bolt_hp2.png
+    http://cdn.dota2.com/apps/dota2/images/abilities/sven_storm_bolt_lg.png
+
+    // 队伍
+    https://api.steampowered.com/IDOTA2Match_570/GetTeamInfoByTeamID/v1?key={}
+    https://api.steampowered.com/IDOTA2Teams_570/GetTeamInfo/v1?key={}&team_id=726228
+    http://api.steampowered.com/ISteamRemoteStorage/GetUGCFileDetails/v1/?key={}&appid=570&ugcid=
+    http://api.steampowered.com/ISteamRemoteStorage/GetUGCFileDetails/v1/?key={}&appid=570&ugcid=35248220277958798
+    http://cloud-3.steamusercontent.com/ugc/35248220277958798/DF3CFDA0EF31EE74B6EA617342CB6B24CE402471/
+
 
 
 
