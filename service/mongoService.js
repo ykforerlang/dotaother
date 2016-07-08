@@ -21,5 +21,7 @@ MongoClient.connect(mongoOpt.url,mongoOpt.options,  function(err, db) {
         exports.getCollection = function(name) {
             return this.getDb().collection(name)
         }
+
+
     }
 })

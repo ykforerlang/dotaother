@@ -26,6 +26,7 @@ blog
      http://browniefed.com/react-native-animation-book/
      https://leanpub.com/programming-react-native
      http://wiki.jikexueyuan.com/project/react-native/scroll-view.html
+     事件合成和事件委托： https://github.com/facebook/react/blob/master/docs/docs/03-interactivity-and-dynamic-uis.zh-CN.md
 
 
 2.mongodb: https://mongodb.github.io/node-mongodb-native/api-generated/collection.html#find
