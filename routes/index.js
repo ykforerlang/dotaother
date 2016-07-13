@@ -1,6 +1,4 @@
 var express = require('express');
-var db = require('../service/mongoService')
-var collectionName = require('../conf/resources.json').mongo.collectionName
 var router = express.Router();
 
 /* GET home page. */

@@ -22,7 +22,7 @@ let req = new LimitRequestUtil({concurrence_size: 10})
 
 
 // init league icon
-setTimeout(initLeagueIcon, 500)  // wait mongo ok
+/*setTimeout(initLeagueIcon, 500)  // wait mongo ok
 function initLeagueIcon() {
     mongoService.getCollection(collections.leagues)
         .find({}, {fields: {_id: 0}})
@@ -31,19 +31,19 @@ function initLeagueIcon() {
             for (let i = 0; i < docs.length; i++) {
                 let doc = docs[i]
                 log.info(doc)
-                /*if (doc.image && doc.leagueid) {
+                /!*if (doc.image && doc.leagueid) {
                  req.submitDownTask(doc.image, "/image/league", () => {
                  let suffix = getSuffix(doc.image)
                  return doc.leagueid + suffix
                  })
-                 }*/
+                 }*!/
             }
         })
 }
 function getSuffix(url) {
     let index = url.lastIndexOf(".")
     return url.substring(index)
-}
+}*/
 
 // init hero icon
 // http://cdn.dota2.com.cn/apps/dota2/images/heroes/nyx_assassin_eg.png
