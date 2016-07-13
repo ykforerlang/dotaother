@@ -49,19 +49,24 @@ blog
     100场： 1450688718 - 1450687298 = 1500s = 150 /6 = 25min
 
 
+    //联赛
+     http://api.steampowered.com/IEconItems_570/GetSchemaURL/v1
+     https://api.steampowered.com/IEconDOTA2_570/GetTournamentPrizePool/v1?key={}&leagueid=2733
+     https://api.steampowered.com/IEconDOTA2_570/GetItemIconPath/v1/?key=<>&format=json&iconname=subscriptions_sdl
+
     //装备图标
     https://api.steampowered.com/IEconDOTA2_570/GetGameItems/v1?key={}&language=zh_cn
-    http://cdn.dota2.com/apps/dota2/images/items/mithril_hammer_lg.png
-    http://cdn.dota2.com/apps/dota2/images/items/mithril_hammer_eg.png
+    http://cdn.dota2.com.cn/apps/dota2/images/items/mithril_hammer_lg.png
+    http://cdn.dota2.com.cn/apps/dota2/images/items/recipe_ward_dispenser_eg.png
 
 
     //英雄图标
     https://api.steampowered.com/IEconDOTA2_570/GetHeroes/v1/?key={}&language=zh_cn
-    http://cdn.dota2.com/apps/dota2/images/heroes/sand_king_full.png
-    http://cdn.dota2.com/apps/dota2/images/heroes/antimage_hphover.png
-    http://cdn.dota2.com/apps/dota2/images/heroes/nyx_assassin_lg.png
-    http://cdn.dota2.com/apps/dota2/images/heroes/nyx_assassin_sb.png
-    http://cdn.dota2.com/apps/dota2/images/heroes/nyx_assassin_eg.png
+    http://cdn.dota2.com.cn/apps/dota2/images/heroes/sand_king_full.png
+    http://cdn.dota2.com.cn/apps/dota2/images/heroes/antimage_hphover.png
+    http://cdn.dota2.com.cn/apps/dota2/images/heroes/nyx_assassin_lg.png
+    http://cdn.dota2.com.cn/apps/dota2/images/heroes/nyx_assassin_sb.png
+    http://cdn.dota2.com.cn/apps/dota2/images/heroes/nyx_assassin_eg.png
 
     //技能图标
     http://cdn.dota2.com/apps/dota2/images/abilities/sven_storm_bolt_hp1.png
@@ -69,6 +74,7 @@ blog
     http://cdn.dota2.com/apps/dota2/images/abilities/sven_storm_bolt_lg.png
 
     // 队伍
+    http://www.dotamax.com/match/tour_famous_team_list/?league_id=&skill=&ladder=&p=6
     https://api.steampowered.com/IDOTA2Match_570/GetTeamInfoByTeamID/v1?key={}
     https://api.steampowered.com/IDOTA2Teams_570/GetTeamInfo/v1?key={}&team_id=726228
     http://api.steampowered.com/ISteamRemoteStorage/GetUGCFileDetails/v1/?key={}&appid=570&ugcid=

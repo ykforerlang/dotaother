@@ -6,7 +6,7 @@ const request = require("request")
 const log4js =  require('log4js')
 const fs =  require('fs')
 const path =  require('path')
-const log = log4js.getLogger(__filename)
+const log = log4js.getLogger(__filename.replace(__dirname, ""))
 
 const  DEFAULT_CONCURRENCE_SIZE = 20
 const  DEFAULT_TIMEOUTS = 5000
@@ -27,25 +27,27 @@ class LimitRequestUtil {
         log.info("submit a task:", url)
         let self = this
 
-        if (this.nowSize <= this.concurrence_size) {
+        if (this.nowSize < this.concurrence_size) {
             let wrapCb = function() {
+                cb.apply(this, Array.prototype.slice.call(arguments))  // 恢复 cb的调用, 包括this和参数
+
                 self.nowSize--
                 let firstTask = self.taskQueue.shift()
 
                 if(!firstTask) {
                     // 队列为空  do nothing
-                } else if (firstTask.targetDir) {
-                    this.submitDownTask(firstTask.url, firstTask.targetDir)
+                } else if (firstTask.type == "downTask") {
+                    self.submitDownTask(firstTask.url, firstTask.targetDir, firstTask.nameFunc)
                 } else {
-                    this.submitTask(firstTask.url, firstTask.cb)
+                    self.submitTask(firstTask.url, firstTask.cb)
                 }
 
-                cb.call(this, Array.prototype.slice.call(arguments))  // 恢复 cb的调用, 包括this和参数
+               // cb.call(this, Array.prototype.slice.call(arguments))  // 恢复 cb的调用, 包括this和参数
             }
             request.get(url, wrapCb)
             this.nowSize++
         } else {
-            this.taskQueue.push({url:url, cb:cb})
+            this.taskQueue.push({url:url, cb:cb, type:"task"})
         }
     }
 
@@ -55,26 +57,25 @@ class LimitRequestUtil {
 
         let nameFuncRel = nameFunc ? nameFunc : this.__getFileName
 
-        if (this.nowSize <= this.concurrence_size) {
+        if (this.nowSize < this.concurrence_size) {
             let fileName = nameFuncRel(url)
             let stream = request(url)
-            stream.pipe(fs.createWriteStream(path.resolve(targetDir, fileName)))
+
+            let desStream = fs.createWriteStream(path.join(targetDir, fileName))
+            stream.pipe(desStream)
+            stream.on("error", (err)=> {
+                log.warn("handled a task:", url, " err:", err)
+                desStream.close()
+                this.__handleNextDown()
+            })
             stream.on('end', ()=>{
                 log.info("handled a task:", url, "nowSize:", this.nowSize)
-                this.nowSize--
-                let firstTask = this.taskQueue.shift()
-
-                if(!firstTask) {
-                    // 队列为空  do nothing
-                } else if (firstTask.targetDir) {
-                    this.submitDownTask(firstTask.url, firstTask.targetDir)
-                } else {
-                    this.submitTask(firstTask.url, firstTask.cb)
-                }
+                desStream.close()
+                this.__handleNextDown()
             })
             this.nowSize++
         } else {
-            this.taskQueue.push({url:url, targetDir:targetDir})
+            this.taskQueue.push({url:url, targetDir:targetDir, nameFunc:nameFunc, type:"downTask"})
         }
     }
 
@@ -84,6 +85,19 @@ class LimitRequestUtil {
         let end = url.indexOf("?")
         end = end == -1 ? url.length : end
         return url.substring(start + 1, end)
+    }
+
+    __handleNextDown() {
+        this.nowSize--
+        let firstTask = this.taskQueue.shift()
+
+        if(!firstTask) {
+            // 队列为空  do nothing
+        } else if (firstTask.type == "downTask") {
+            this.submitDownTask(firstTask.url, firstTask.targetDir, firstTask.nameFunc)
+        } else {
+            this.submitTask(firstTask.url, firstTask.cb)
+        }
     }
 }
 

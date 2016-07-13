@@ -35,8 +35,7 @@ steamClient.on('logOnResponse', function(res) {
 var dota2Ready = function() {
     console.log("dota2 client ready")
 
-
-    dota2.requestLeagueInfo()
+   dota2.requestLeagueInfo()
     dota2.on("leagueData", solveLeagueData)
 }
 var solveLeagueData = function(leagueData) {
