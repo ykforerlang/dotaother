@@ -12,7 +12,7 @@ var log = log4js.getLogger(__filename)
 /**
  * 根据steam webapi获取  某个赛事详情
  */
-router.get("/:matchId/detailLess", (req, res) => {
+router.get("/:matchId/detail", (req, res) => {
     let matchId = req.params.matchId;
 
     myDota2Web.getMatchDetail(matchId, function(err, data) {
