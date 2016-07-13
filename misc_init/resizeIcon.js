@@ -7,7 +7,6 @@ const exec = require('child_process').exec
 //resize league icon to small
 // jpg is smaller and  resize to 80 x60
 //convert 4649.png -resize 80x60  4649small2.jpg
-const exec = require('child_process').exec;
 const leagueBriefs = require('../conf/leagueBriefs.json')
 const leagueInfos = leagueBriefs.professional.concat(leagueBriefs.premium, leagueBriefs.amateur)
 function resizeLeague() {
