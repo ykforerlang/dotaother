@@ -27,7 +27,7 @@ router.get("/:id/getMatches", (req, res) => {
 
         var matches = integrateMatch(data.result.matches)
         log.debug("get matches:", matches)
-        res.send(matches)
+        res.send(resUtil.successRes(matches))
     })
 
 })
