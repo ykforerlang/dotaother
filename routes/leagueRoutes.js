@@ -14,7 +14,7 @@ router.get("/:id/getMatches", (req, res) => {
     let leagueid = Number(req.params.id)
     let params = req.query || {}
 
-    let opt = {league_id: leagueid, matches_requested: 30}
+    let opt = {league_id: leagueid, matches_requested: 30}  // matches_requested is number of series
     if (params.startMatchId)
         opt.start_at_match_id = params.startMatchId
 
@@ -26,41 +26,43 @@ router.get("/:id/getMatches", (req, res) => {
         }
 
         var matches = integrateMatch(data.result.matches)
-        log.debug("get matches:", matches)
         res.send(resUtil.successRes(matches))
     })
 
 })
 
 
-//将赛事列表 转化为 bo几 的列表形式
-var integrateMatch = function (matches) {
-    var result = []
-
-    for (var i = 0; i < matches.length;) {
-        var sub = {
-            radiant_team_id: matches[i].radiant_team_id,
-            dire_team_id: matches[i].dire_team_id,
-            create_time: new moment(matches[i].start_time * 1000).format("YYYY-MM-DD HH时"),
-            sub_matches: [matches[i]]
+//将赛事列表 转化为 bo几 的列表形式  根据 series_type  判定： 0 is a non-series, 1 is a bo3, 2 is a bo5
+function integrateMatch(matches) {
+    let data =[]
+    for (let i = 0; i < matches.length;) {
+        let match = matches[i]
+        let series = {
+            radiant_team_id:match.radiant_team_id,
+            dire_team_id:match.dire_team_id,
+            series_type :match.series_type,
+            create_time: new moment(match.start_time * 1000).format("YYYY-MM-DD HH时"),
+            matches:[match]
         }
+        if (match.series_type != 0) { //series
+            let seriesId = match.series_id
+            for (var j = 1; j < 10; j++) {
+                if (i + j >= matches.length)
+                    break
 
-        for (var j = 1; j < 10; j++) { //最多bo5
-            if (i + j >= matches.length) {
-                result.push(sub);
-                return result;
+                if (matches[i + j].series_id == seriesId) {
+                    series.matches.push(matches[i + j])
+                } else {
+                    break
+                }
             }
-
-            if ((sub.radiant_team_id == matches[i + j].radiant_team_id && sub.dire_team_id == matches[i + j].dire_team_id) ||
-                (sub.radiant_team_id == matches[i + j].dire_team_id && sub.dire_team_id == matches[i + j].radiant_team_id)) {
-                sub.sub_matches.push(matches[i + j])
-            } else {
-                i = i + j;
-                break
-            }
+            i = i + j
+        } else {
+            i = i + 1
         }
-        result.push(sub)
+        data.push(series)
     }
+    return data
 }
 
 module.exports = router;

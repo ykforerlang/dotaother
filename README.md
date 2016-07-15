@@ -81,7 +81,14 @@ blog
     http://api.steampowered.com/ISteamRemoteStorage/GetUGCFileDetails/v1/?key={}&appid=570&ugcid=35248220277958798
     http://cloud-3.steamusercontent.com/ugc/35248220277958798/DF3CFDA0EF31EE74B6EA617342CB6B24CE402471/
 
+    //个人
+    http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=577A366039269967223A15C59EDE6D3B&steamids=76561197960435530
 
 
+   STEAMID32 + 76561197960265728 = STEAMID64
+   182331313 + 76561197960265728 = 76561198142597040
+   76561197960265728
+           182331313
+   76561198142597041
 
 
