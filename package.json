@@ -23,10 +23,11 @@
     "jsdom": "^9.4.1",
     "keyvalues-node": "0.0.2",
     "log4js": "^0.6.36",
+    "moment": "^2.14.1",
     "mongodb": "^2.1.18",
     "morgan": "~1.6.1",
+    "request": "^2.73.0",
     "serve-favicon": "~2.3.0",
-    "sharp": "^0.15.0",
     "steam": "^1.4.0"
   },
   "devDependencies": {
