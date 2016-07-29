@@ -67,6 +67,7 @@ blog
     http://cdn.dota2.com.cn/apps/dota2/images/heroes/nyx_assassin_lg.png
     http://cdn.dota2.com.cn/apps/dota2/images/heroes/nyx_assassin_sb.png
     http://cdn.dota2.com.cn/apps/dota2/images/heroes/nyx_assassin_eg.png
+    http://cdn.dota2.com/apps/dota2/images/miniheroes/leshrac.png
 
     //技能图标
     http://cdn.dota2.com/apps/dota2/images/abilities/sven_storm_bolt_hp1.png

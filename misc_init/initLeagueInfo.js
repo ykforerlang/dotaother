@@ -26,13 +26,13 @@ fs.readFile("../conf/itemsGame.txt", function(err, data) {
             let lea = leagues[key]
             initLeagueInfo(lea, items[lea.itemdef])
         }
-        leagueBriefs.amateur = amateur.reverse().slice(0, 50) //amateur  just 50
-        leagueBriefs.professional = professional.reverse()
+        leagueBriefs.amateur = amateur.reverse().slice(0, 30) //amateur  just 30
+        leagueBriefs.professional = professional.reverse().slice(0,50) // professional just 50
         leagueBriefs.premium = premium.reverse()
         fs.writeFile(leagueBriefsFile, JSON.stringify(leagueBriefs))
 
         let leagueInfosAll = leagueBriefs.professional.concat(leagueBriefs.premium, leagueBriefs.amateur)
-        initIconAndPricePool(leagueInfosAll)
+       /* initIconAndPricePool(leagueInfosAll)*/
     })
 
 })
@@ -52,6 +52,7 @@ function initLeagueInfo(webLea, fileLea) {
             imageInventory:fileLea.image_inventory,
         }
 
+        console.log(fileLea)
         let usage = fileLea.tool.usage
         if (usage) {
             leagueAllInfo.free_to_spectate =Number(usage.free_to_spectate || 0)
@@ -78,7 +79,7 @@ function initIconAndPricePool(leagueInfosAll) {
                 console.log("get league:", league.id, "  ", league.imageInventory," icon url err:", err)
             } else {
                 let image = resources.iconCDN + JSON.parse(body).result.path
-                req.submitDownTask(image, "./image/league3", () =>{
+                req.submitDownTask(image, "/image/leagueOriginal", () =>{
                     return league.id + ".png"
                 })
             }
