@@ -7,7 +7,7 @@ var Dota2Api = require('dota2-api')
 var request = require('request')
 var fs = require("fs")
 
-//http://api.steampowered.com/IEconItems_570/GetSchemaURL/v1/?key=577A366039269967223A15C59EDE6D3B
+//http://api.steampowered.com/IEconItems_570/GetSchemaURL/v1/?key={}
 Dota2Api.prototype.getSchemaInfo = function(cb) {
     this.validOptions = ['']
     this.path = 'IEconItems_' + this.ID + '/GetSchemaURL/v1';

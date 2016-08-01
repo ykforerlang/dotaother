@@ -7,7 +7,7 @@
     }
   ],
 
-  "webKey" : "577A366039269967223A15C59EDE6D3B",
+  "webKey" : "6515B089779D631CD61B8599622FE7FC",
   "webUrl" : "http://api.steampowered.com/IDOTA2Match_570/GetLeagueListing/v1/",
   "iconCDN" : "http://cdn.dota2.com.cn/apps/570/",
   "host":"http://www.test.com",

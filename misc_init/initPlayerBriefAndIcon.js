@@ -16,7 +16,7 @@ const playerBriefs = {}
 function initPlayerBriefAndIcon() {
     //teamBriefs = {3:[1]}
     for (let key in teamBriefs) {
-        // https://api.steampowered.com/IDOTA2Teams_570/GetTeamInfo/v1?key=577A366039269967223A15C59EDE6D3B&team_id=726228
+        // https://api.steampowered.com/IDOTA2Teams_570/GetTeamInfo/v1?key={}&team_id=726228
         let fullUrl = "https://api.steampowered.com/IDOTA2Teams_570/GetTeamInfo/v1?key=" + webKey + "&team_id=" + key
         req.submitTask(fullUrl, (err, res, body) =>{
             if(err || res.statusCode != 200) {
