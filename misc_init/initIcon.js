@@ -52,8 +52,8 @@ const heroBriefsFile = "../conf/heroBriefs.json"
 function initHeroIcon() {
     for (let i = 0; i < heroesInfo.length; i++) {
         let hero = heroesInfo[i]
-        let fullUrl = heroPrefix + hero.name.replace("npc_dota_hero_", "") + "_eg.png" // all picture is png format, eg is small
-        req.submitDownTask(fullUrl, "/image/hero1", () => {
+        let fullUrl = heroPrefix + hero.name.replace("npc_dota_hero_", "") + "_selection.png" // all picture is png format, eg is small
+        req.submitDownTask(fullUrl, "/image/heroOriginal", () => {
             return hero.id + ".png"
         })
 

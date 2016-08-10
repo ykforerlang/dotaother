@@ -29,6 +29,7 @@ fs.readFile("../conf/itemsGame.txt", function(err, data) {
         leagueBriefs.amateur = amateur.reverse().slice(0, 30) //amateur  just 30
         leagueBriefs.professional = professional.reverse().slice(0,50) // professional just 50
         leagueBriefs.premium = premium.reverse()
+        //leagueBriefs.icon = "require('../common/images/league/" + item.id + ".png')"
         fs.writeFile(leagueBriefsFile, JSON.stringify(leagueBriefs))
 
         let leagueInfosAll = leagueBriefs.professional.concat(leagueBriefs.premium, leagueBriefs.amateur)
@@ -45,6 +46,7 @@ function initLeagueInfo(webLea, fileLea) {
 
         let leagueAllInfo = {
             id:webLea.leagueid,
+            icon:"require('../common/images/league/" + webLea.leagueid + ".png')",
             name:webLea.name,
             description:webLea.description,
             itemdef:webLea.itemdef,

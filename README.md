@@ -27,6 +27,7 @@ blog
      https://leanpub.com/programming-react-native
      http://wiki.jikexueyuan.com/project/react-native/scroll-view.html
      事件合成和事件委托： https://github.com/facebook/react/blob/master/docs/docs/03-interactivity-and-dynamic-uis.zh-CN.md
+     first page: https://github.com/facebook/react-native/issues/1281
 
 
 2.mongodb: https://mongodb.github.io/node-mongodb-native/api-generated/collection.html#find
@@ -91,5 +92,9 @@ blog
    76561197960265728
            182331313
    76561198142597041
+
+
+   6. 优酷视频/爬虫
+
 
 

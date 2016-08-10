@@ -37,11 +37,12 @@ function initPlayerBriefAndIcon() {
                             avatarSteam = avatarSteam.replace("https://steamcdn-a.akamaihd.net", "http://cdn.dota2.com.cn")
 
                             playerBriefs[member.account_id] = {
-                                personaname:player.personaname
+                                personaname:player.personaname,
+                                icon:"require('../common/images/player/" + member.account_id + ".jpg')"
                             }
-                            req.submitDownTask(avatarSteam, "./player2", ()=>{
+                           /* req.submitDownTask(avatarSteam, "./player2", ()=>{
                                 return member.account_id + ".jpg"
-                            })
+                            })*/
                         }
                     })
                 })
@@ -49,4 +50,13 @@ function initPlayerBriefAndIcon() {
         })
     }
 }
-initPlayerBriefAndIcon()
+//initPlayerBriefAndIcon()
+
+
+//TODO add icon to json file
+
+const players = require("../conf/playerBriefs.json")
+for (let key in players) {
+    players[key].icon = "require('../common/images/player/" + key + ".jpg')"
+}
+fs.writeFile("../conf/playerBriefs.json", JSON.stringify(players))

@@ -1,446 +1,557 @@
 {
   "1": {
     "id": 1,
-    "name": "敌法师"
+    "name": "敌法师",
+    "icon": "require('../common/images/hero/hero_1.png')"
   },
   "2": {
     "id": 2,
-    "name": "斧王"
+    "name": "斧王",
+    "icon": "require('../common/images/hero/hero_2.png')"
   },
   "3": {
     "id": 3,
-    "name": "祸乱之源"
+    "name": "祸乱之源",
+    "icon": "require('../common/images/hero/hero_3.png')"
   },
   "4": {
     "id": 4,
-    "name": "嗜血狂魔"
+    "name": "嗜血狂魔",
+    "icon": "require('../common/images/hero/hero_4.png')"
   },
   "5": {
     "id": 5,
-    "name": "水晶室女"
+    "name": "水晶室女",
+    "icon": "require('../common/images/hero/hero_5.png')"
   },
   "6": {
     "id": 6,
-    "name": "卓尔游侠"
+    "name": "卓尔游侠",
+    "icon": "require('../common/images/hero/hero_6.png')"
   },
   "7": {
     "id": 7,
-    "name": "撼地者"
+    "name": "撼地者",
+    "icon": "require('../common/images/hero/hero_7.png')"
   },
   "8": {
     "id": 8,
-    "name": "主宰"
+    "name": "主宰",
+    "icon": "require('../common/images/hero/hero_8.png')"
   },
   "9": {
     "id": 9,
-    "name": "米拉娜"
+    "name": "米拉娜",
+    "icon": "require('../common/images/hero/hero_9.png')"
   },
   "10": {
     "id": 10,
-    "name": "变体精灵"
+    "name": "变体精灵",
+    "icon": "require('../common/images/hero/hero_10.png')"
   },
   "11": {
     "id": 11,
-    "name": "影魔"
+    "name": "影魔",
+    "icon": "require('../common/images/hero/hero_11.png')"
   },
   "12": {
     "id": 12,
-    "name": "幻影长矛手"
+    "name": "幻影长矛手",
+    "icon": "require('../common/images/hero/hero_12.png')"
   },
   "13": {
     "id": 13,
-    "name": "帕克"
+    "name": "帕克",
+    "icon": "require('../common/images/hero/hero_13.png')"
   },
   "14": {
     "id": 14,
-    "name": "帕吉"
+    "name": "帕吉",
+    "icon": "require('../common/images/hero/hero_14.png')"
   },
   "15": {
     "id": 15,
-    "name": "剃刀"
+    "name": "剃刀",
+    "icon": "require('../common/images/hero/hero_15.png')"
   },
   "16": {
     "id": 16,
-    "name": "沙王"
+    "name": "沙王",
+    "icon": "require('../common/images/hero/hero_16.png')"
   },
   "17": {
     "id": 17,
-    "name": "风暴之灵"
+    "name": "风暴之灵",
+    "icon": "require('../common/images/hero/hero_17.png')"
   },
   "18": {
     "id": 18,
-    "name": "斯温"
+    "name": "斯温",
+    "icon": "require('../common/images/hero/hero_18.png')"
   },
   "19": {
     "id": 19,
-    "name": "小小"
+    "name": "小小",
+    "icon": "require('../common/images/hero/hero_19.png')"
   },
   "20": {
     "id": 20,
-    "name": "复仇之魂"
+    "name": "复仇之魂",
+    "icon": "require('../common/images/hero/hero_20.png')"
   },
   "21": {
     "id": 21,
-    "name": "风行者"
+    "name": "风行者",
+    "icon": "require('../common/images/hero/hero_21.png')"
   },
   "22": {
     "id": 22,
-    "name": "宙斯"
+    "name": "宙斯",
+    "icon": "require('../common/images/hero/hero_22.png')"
   },
   "23": {
     "id": 23,
-    "name": "昆卡"
+    "name": "昆卡",
+    "icon": "require('../common/images/hero/hero_23.png')"
   },
   "25": {
     "id": 25,
-    "name": "莉娜"
+    "name": "莉娜",
+    "icon": "require('../common/images/hero/hero_25.png')"
   },
   "26": {
     "id": 26,
-    "name": "莱恩"
+    "name": "莱恩",
+    "icon": "require('../common/images/hero/hero_26.png')"
   },
   "27": {
     "id": 27,
-    "name": "暗影萨满"
+    "name": "暗影萨满",
+    "icon": "require('../common/images/hero/hero_27.png')"
   },
   "28": {
     "id": 28,
-    "name": "斯拉达"
+    "name": "斯拉达",
+    "icon": "require('../common/images/hero/hero_28.png')"
   },
   "29": {
     "id": 29,
-    "name": "潮汐猎人"
+    "name": "潮汐猎人",
+    "icon": "require('../common/images/hero/hero_29.png')"
   },
   "30": {
     "id": 30,
-    "name": "巫医"
+    "name": "巫医",
+    "icon": "require('../common/images/hero/hero_30.png')"
   },
   "31": {
     "id": 31,
-    "name": "巫妖"
+    "name": "巫妖",
+    "icon": "require('../common/images/hero/hero_31.png')"
   },
   "32": {
     "id": 32,
-    "name": "力丸"
+    "name": "力丸",
+    "icon": "require('../common/images/hero/hero_32.png')"
   },
   "33": {
     "id": 33,
-    "name": "谜团"
+    "name": "谜团",
+    "icon": "require('../common/images/hero/hero_33.png')"
   },
   "34": {
     "id": 34,
-    "name": "修补匠"
+    "name": "修补匠",
+    "icon": "require('../common/images/hero/hero_34.png')"
   },
   "35": {
     "id": 35,
-    "name": "狙击手"
+    "name": "狙击手",
+    "icon": "require('../common/images/hero/hero_35.png')"
   },
   "36": {
     "id": 36,
-    "name": "瘟疫法师"
+    "name": "瘟疫法师",
+    "icon": "require('../common/images/hero/hero_36.png')"
   },
   "37": {
     "id": 37,
-    "name": "术士"
+    "name": "术士",
+    "icon": "require('../common/images/hero/hero_37.png')"
   },
   "38": {
     "id": 38,
-    "name": "兽王"
+    "name": "兽王",
+    "icon": "require('../common/images/hero/hero_38.png')"
   },
   "39": {
     "id": 39,
-    "name": "痛苦女王"
+    "name": "痛苦女王",
+    "icon": "require('../common/images/hero/hero_39.png')"
   },
   "40": {
     "id": 40,
-    "name": "剧毒术士"
+    "name": "剧毒术士",
+    "icon": "require('../common/images/hero/hero_40.png')"
   },
   "41": {
     "id": 41,
-    "name": "虚空假面"
+    "name": "虚空假面",
+    "icon": "require('../common/images/hero/hero_41.png')"
   },
   "42": {
     "id": 42,
-    "name": "冥魂大帝"
+    "name": "冥魂大帝",
+    "icon": "require('../common/images/hero/hero_42.png')"
   },
   "43": {
     "id": 43,
-    "name": "死亡先知"
+    "name": "死亡先知",
+    "icon": "require('../common/images/hero/hero_43.png')"
   },
   "44": {
     "id": 44,
-    "name": "幻影刺客"
+    "name": "幻影刺客",
+    "icon": "require('../common/images/hero/hero_44.png')"
   },
   "45": {
     "id": 45,
-    "name": "帕格纳"
+    "name": "帕格纳",
+    "icon": "require('../common/images/hero/hero_45.png')"
   },
   "46": {
     "id": 46,
-    "name": "圣堂刺客"
+    "name": "圣堂刺客",
+    "icon": "require('../common/images/hero/hero_46.png')"
   },
   "47": {
     "id": 47,
-    "name": "冥界亚龙"
+    "name": "冥界亚龙",
+    "icon": "require('../common/images/hero/hero_47.png')"
   },
   "48": {
     "id": 48,
-    "name": "露娜"
+    "name": "露娜",
+    "icon": "require('../common/images/hero/hero_48.png')"
   },
   "49": {
     "id": 49,
-    "name": "龙骑士"
+    "name": "龙骑士",
+    "icon": "require('../common/images/hero/hero_49.png')"
   },
   "50": {
     "id": 50,
-    "name": "戴泽"
+    "name": "戴泽",
+    "icon": "require('../common/images/hero/hero_50.png')"
   },
   "51": {
     "id": 51,
-    "name": "发条技师"
+    "name": "发条技师",
+    "icon": "require('../common/images/hero/hero_51.png')"
   },
   "52": {
     "id": 52,
-    "name": "拉席克"
+    "name": "拉席克",
+    "icon": "require('../common/images/hero/hero_52.png')"
   },
   "53": {
     "id": 53,
-    "name": "先知"
+    "name": "先知",
+    "icon": "require('../common/images/hero/hero_53.png')"
   },
   "54": {
     "id": 54,
-    "name": "噬魂鬼"
+    "name": "噬魂鬼",
+    "icon": "require('../common/images/hero/hero_54.png')"
   },
   "55": {
     "id": 55,
-    "name": "黑暗贤者"
+    "name": "黑暗贤者",
+    "icon": "require('../common/images/hero/hero_55.png')"
   },
   "56": {
     "id": 56,
-    "name": "克林克兹"
+    "name": "克林克兹",
+    "icon": "require('../common/images/hero/hero_56.png')"
   },
   "57": {
     "id": 57,
-    "name": "全能骑士"
+    "name": "全能骑士",
+    "icon": "require('../common/images/hero/hero_57.png')"
   },
   "58": {
     "id": 58,
-    "name": "魅惑魔女"
+    "name": "魅惑魔女",
+    "icon": "require('../common/images/hero/hero_58.png')"
   },
   "59": {
     "id": 59,
-    "name": "哈斯卡"
+    "name": "哈斯卡",
+    "icon": "require('../common/images/hero/hero_59.png')"
   },
   "60": {
     "id": 60,
-    "name": "暗夜魔王"
+    "name": "暗夜魔王",
+    "icon": "require('../common/images/hero/hero_60.png')"
   },
   "61": {
     "id": 61,
-    "name": "育母蜘蛛"
+    "name": "育母蜘蛛",
+    "icon": "require('../common/images/hero/hero_61.png')"
   },
   "62": {
     "id": 62,
-    "name": "赏金猎人"
+    "name": "赏金猎人",
+    "icon": "require('../common/images/hero/hero_62.png')"
   },
   "63": {
     "id": 63,
-    "name": "编织者"
+    "name": "编织者",
+    "icon": "require('../common/images/hero/hero_63.png')"
   },
   "64": {
     "id": 64,
-    "name": "杰奇洛"
+    "name": "杰奇洛",
+    "icon": "require('../common/images/hero/hero_64.png')"
   },
   "65": {
     "id": 65,
-    "name": "蝙蝠骑士"
+    "name": "蝙蝠骑士",
+    "icon": "require('../common/images/hero/hero_65.png')"
   },
   "66": {
     "id": 66,
-    "name": "陈"
+    "name": "陈",
+    "icon": "require('../common/images/hero/hero_66.png')"
   },
   "67": {
     "id": 67,
-    "name": "幽鬼"
+    "name": "幽鬼",
+    "icon": "require('../common/images/hero/hero_67.png')"
   },
   "68": {
     "id": 68,
-    "name": "远古冰魄"
+    "name": "远古冰魄",
+    "icon": "require('../common/images/hero/hero_68.png')"
   },
   "69": {
     "id": 69,
-    "name": "末日使者"
+    "name": "末日使者",
+    "icon": "require('../common/images/hero/hero_69.png')"
   },
   "70": {
     "id": 70,
-    "name": "熊战士"
+    "name": "熊战士",
+    "icon": "require('../common/images/hero/hero_70.png')"
   },
   "71": {
     "id": 71,
-    "name": "裂魂人"
+    "name": "裂魂人",
+    "icon": "require('../common/images/hero/hero_71.png')"
   },
   "72": {
     "id": 72,
-    "name": "矮人直升机"
+    "name": "矮人直升机",
+    "icon": "require('../common/images/hero/hero_72.png')"
   },
   "73": {
     "id": 73,
-    "name": "炼金术士"
+    "name": "炼金术士",
+    "icon": "require('../common/images/hero/hero_73.png')"
   },
   "74": {
     "id": 74,
-    "name": "祈求者"
+    "name": "祈求者",
+    "icon": "require('../common/images/hero/hero_74.png')"
   },
   "75": {
     "id": 75,
-    "name": "沉默术士"
+    "name": "沉默术士",
+    "icon": "require('../common/images/hero/hero_75.png')"
   },
   "76": {
     "id": 76,
-    "name": "殁境神蚀者"
+    "name": "殁境神蚀者",
+    "icon": "require('../common/images/hero/hero_76.png')"
   },
   "77": {
     "id": 77,
-    "name": "狼人"
+    "name": "狼人",
+    "icon": "require('../common/images/hero/hero_77.png')"
   },
   "78": {
     "id": 78,
-    "name": "酒仙"
+    "name": "酒仙",
+    "icon": "require('../common/images/hero/hero_78.png')"
   },
   "79": {
     "id": 79,
-    "name": "暗影恶魔"
+    "name": "暗影恶魔",
+    "icon": "require('../common/images/hero/hero_79.png')"
   },
   "80": {
     "id": 80,
-    "name": "德鲁伊"
+    "name": "德鲁伊",
+    "icon": "require('../common/images/hero/hero_80.png')"
   },
   "81": {
     "id": 81,
-    "name": "混沌骑士"
+    "name": "混沌骑士",
+    "icon": "require('../common/images/hero/hero_81.png')"
   },
   "82": {
     "id": 82,
-    "name": "米波"
+    "name": "米波",
+    "icon": "require('../common/images/hero/hero_82.png')"
   },
   "83": {
     "id": 83,
-    "name": "树精卫士"
+    "name": "树精卫士",
+    "icon": "require('../common/images/hero/hero_83.png')"
   },
   "84": {
     "id": 84,
-    "name": "食人魔魔法师"
+    "name": "食人魔魔法师",
+    "icon": "require('../common/images/hero/hero_84.png')"
   },
   "85": {
     "id": 85,
-    "name": "不朽尸王"
+    "name": "不朽尸王",
+    "icon": "require('../common/images/hero/hero_85.png')"
   },
   "86": {
     "id": 86,
-    "name": "拉比克"
+    "name": "拉比克",
+    "icon": "require('../common/images/hero/hero_86.png')"
   },
   "87": {
     "id": 87,
-    "name": "干扰者"
+    "name": "干扰者",
+    "icon": "require('../common/images/hero/hero_87.png')"
   },
   "88": {
     "id": 88,
-    "name": "司夜刺客"
+    "name": "司夜刺客",
+    "icon": "require('../common/images/hero/hero_88.png')"
   },
   "89": {
     "id": 89,
-    "name": "娜迦海妖"
+    "name": "娜迦海妖",
+    "icon": "require('../common/images/hero/hero_89.png')"
   },
   "90": {
     "id": 90,
-    "name": "光之守卫"
+    "name": "光之守卫",
+    "icon": "require('../common/images/hero/hero_90.png')"
   },
   "91": {
     "id": 91,
-    "name": "艾欧"
+    "name": "艾欧",
+    "icon": "require('../common/images/hero/hero_91.png')"
   },
   "92": {
     "id": 92,
-    "name": "维萨吉"
+    "name": "维萨吉",
+    "icon": "require('../common/images/hero/hero_92.png')"
   },
   "93": {
     "id": 93,
-    "name": "斯拉克"
+    "name": "斯拉克",
+    "icon": "require('../common/images/hero/hero_93.png')"
   },
   "94": {
     "id": 94,
-    "name": "美杜莎"
+    "name": "美杜莎",
+    "icon": "require('../common/images/hero/hero_94.png')"
   },
   "95": {
     "id": 95,
-    "name": "巨魔战将"
+    "name": "巨魔战将",
+    "icon": "require('../common/images/hero/hero_95.png')"
   },
   "96": {
     "id": 96,
-    "name": "半人马战行者"
+    "name": "半人马战行者",
+    "icon": "require('../common/images/hero/hero_96.png')"
   },
   "97": {
     "id": 97,
-    "name": "马格纳斯"
+    "name": "马格纳斯",
+    "icon": "require('../common/images/hero/hero_97.png')"
   },
   "98": {
     "id": 98,
-    "name": "伐木机"
+    "name": "伐木机",
+    "icon": "require('../common/images/hero/hero_98.png')"
   },
   "99": {
     "id": 99,
-    "name": "钢背兽"
+    "name": "钢背兽",
+    "icon": "require('../common/images/hero/hero_99.png')"
   },
   "100": {
     "id": 100,
-    "name": "巨牙海民"
+    "name": "巨牙海民",
+    "icon": "require('../common/images/hero/hero_100.png')"
   },
   "101": {
     "id": 101,
-    "name": "天怒法师"
+    "name": "天怒法师",
+    "icon": "require('../common/images/hero/hero_101.png')"
   },
   "102": {
     "id": 102,
-    "name": "亚巴顿"
+    "name": "亚巴顿",
+    "icon": "require('../common/images/hero/hero_102.png')"
   },
   "103": {
     "id": 103,
-    "name": "上古巨神"
+    "name": "上古巨神",
+    "icon": "require('../common/images/hero/hero_103.png')"
   },
   "104": {
     "id": 104,
-    "name": "军团指挥官"
+    "name": "军团指挥官",
+    "icon": "require('../common/images/hero/hero_104.png')"
   },
   "105": {
     "id": 105,
-    "name": "工程师"
+    "name": "工程师",
+    "icon": "require('../common/images/hero/hero_105.png')"
   },
   "106": {
     "id": 106,
-    "name": "灰烬之灵"
+    "name": "灰烬之灵",
+    "icon": "require('../common/images/hero/hero_106.png')"
   },
   "107": {
     "id": 107,
-    "name": "大地之灵"
+    "name": "大地之灵",
+    "icon": "require('../common/images/hero/hero_107.png')"
   },
   "109": {
     "id": 109,
-    "name": "恐怖利刃"
+    "name": "恐怖利刃",
+    "icon": "require('../common/images/hero/hero_109.png')"
   },
   "110": {
     "id": 110,
-    "name": "凤凰"
+    "name": "凤凰",
+    "icon": "require('../common/images/hero/hero_110.png')"
   },
   "111": {
     "id": 111,
-    "name": "神谕者"
+    "name": "神谕者",
+    "icon": "require('../common/images/hero/hero_111.png')"
   },
   "112": {
     "id": 112,
-    "name": "寒冬飞龙"
+    "name": "寒冬飞龙",
+    "icon": "require('../common/images/hero/hero_112.png')"
   },
   "113": {
     "id": 113,
-    "name": "天穹守望者"
+    "name": "天穹守望者",
+    "icon": "require('../common/images/hero/hero_113.png')"
   }
 }
