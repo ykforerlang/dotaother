@@ -28,6 +28,7 @@ blog
      http://wiki.jikexueyuan.com/project/react-native/scroll-view.html
      事件合成和事件委托： https://github.com/facebook/react/blob/master/docs/docs/03-interactivity-and-dynamic-uis.zh-CN.md
      first page: https://github.com/facebook/react-native/issues/1281
+                 http://bbs.reactnative.cn/topic/1850/react-native-ios-%E8%AE%BE%E7%BD%AE-launchscreen
 
 
 2.mongodb: https://mongodb.github.io/node-mongodb-native/api-generated/collection.html#find
